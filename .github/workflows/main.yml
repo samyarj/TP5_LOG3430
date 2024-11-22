@@ -26,8 +26,7 @@ jobs:
 
     - name: Start Flask server
       run: |
-        python server.py
-        & 
+        nohup python server.py & 
         echo "Waiting for Flask server to start"
         sleep 30
 
